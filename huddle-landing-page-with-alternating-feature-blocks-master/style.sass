@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+    
+$pink: hsl(322, 100%, 66%)
+$very-pale-cyan: hsl(193, 100%, 96%)
+$very-dark-cyan: hsl(192, 100%, 9%)
+$grayish-blue: hsl(208, 11%, 55%)
+
+::-webkit-scrollbar
+    width: 1em;
+
+::-webkit-scrollbar-track
+    background: transparent;
+    border-radius: 100vw
+
+::-webkit-scrollbar-thumb
+    background: $very-dark-cyan;
+    border-radius: 100vw
+    border: 2px solid white
+    transition: background 0.2s ease
+
+::-webkit-scrollbar-thumb:hover
+    background: hsl(192, 100%, 20%);
+    
+html
+    font-size: 18px
+    color: $very-dark-cyan
+
+h1,h2
+    font-family: 'Poppins', sans-serif
+
+body
+    font-family: 'Open Sans', sans-serif
+    overflow: overlay
+    main
+        display: flex
+        flex-direction: column
+        .intro
+            padding-block: 3rem 
+            padding-inline: 3rem
+            background-color: $very-pale-cyan
+            background-image: url("/images/bg-hero-desktop.svg")
+            background-repeat: no-repeat
+            background-size: cover
+            height: 100vh
+            display: flex
+            flex-direction: column
+            header
+                display: flex
+                max-width: 1280px
+                margin: auto
+                align-items: center
+                justify-content: space-between
+                margin-bottom: 0rem
+                button
+                    font-size: 0.8rem
+                    font-weight: 700
+                    background-color: white
+                    padding: 0.6rem
+                    width: 150px
+                    border: 0
+                    border-radius: 50px
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
+                    transition: color 0.2s ease
+                    cursor: pointer
+                button:hover
+                    color: $grayish-blue
+                    transition: color 0.2s ease
+                button:not(:hover)
+                    color: $very-dark-cyan
+                    transition: color 0.2s ease
+            .container
+                display: flex
+                align-items: center
+                max-width: 1280px
+                margin: auto
+                gap: 4rem
+                .text
+                    h1
+                        font-size: 2.5rem
+                    p
+                        font-size: 1rem
+                        margin-block: 1rem
+                    button
+                        width: 280px
+                        font-size: 0.8rem
+                        color: white
+                        background-color: $pink
+                        padding: 1rem
+                        border: 0
+                        border-radius: 50px
+                        cursor: pointer
+                        font-weight: 700
+                        transition: opacity 0.3s ease
+                    button:hover
+                        opacity: 0.7
+                        transition: opacity 0.2s ease
+                    button:not(:hover)
+                        opacity: 1
+                        transition: opacity 0.5s ease
+                img
+                    max-width: 690px 
+        .cards
+            margin-block: 8rem
+            padding-inline: 3rem
+            article
+                display: flex
+                align-items: center
+                max-width: 1280px
+                margin: auto
+                border-radius: 20px
+                padding-left: 120px
+                padding-right: 50px
+                padding-bottom: 0
+                height: 440px
+                justify-content: space-between
+                margin-bottom: 2.5rem
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1)
+                img
+                    height: 80%
+                div
+                    max-width: 500px
+                p
+                    color: $grayish-blue
+        .ready-to-build
+            background-color: white
+            color: $very-dark-cyan
+            width: 800px
+            margin: auto
+            text-align: center
+            padding: 2.5rem
+            border-radius: 20px
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1)
+            margin-bottom: -80px
+            button
+                margin-top: 20px
+                width: 330px
+                font-size: 1rem
+                color: white
+                background-color: $pink
+                padding: 1.5rem
+                border: 0
+                border-radius: 50px
+                cursor: pointer
+                font-weight: 700
+                transition: opacity 0.3s ease
+            button:hover
+                opacity: 0.7
+                transition: opacity 0.2s ease
+            button:not(:hover)
+                opacity: 1
+                transition: opacity 0.5s ease
+    footer
+        color: white
+        background-color: $very-dark-cyan
+        padding-top: 7rem
+        font-size: 0.8rem
+        .footer
+            max-width: 1280px
+            margin: auto
+            padding-inline: 3rem
+            .logo
+                height: 25px
+                margin-bottom: 2rem
+            .container
+                display: flex
+                max-width: 1280px
+                margin: auto
+                justify-content: space-between
+                .lorem
+                    max-width: 380px
+                    div
+                        display: flex
+                        align-items: self-start
+                        gap: 1rem
+                        margin-bottom: 1rem
+                .about-us, .career
+                    display: flex
+                    flex-direction: column
+                    gap: 1rem
+                    a
+                        color: white
+                        text-decoration: none
+                    a:hover
+                        text-decoration: underline
+                .social
+                    margin-right: 160px
+                    a
+                        font-size: 1rem
+                        color: white
+                        transition: all 0.2s ease
+                        display: inline-flex
+                        align-items: center
+                        justify-content: center
+                        text-decoration: none
+                        border-radius: 50px
+                        width: 1.8rem
+                        height: 1.8rem
+                        margin-left: 1rem
+                    a:hover
+                        color: $pink
+                        border: 1px solid $pink
+
+                    a:not(:hover)
+                        transition: all 0.2s ease
+                        color: white
+                        border: 1px solid white
+            .copyright
+                padding-bottom: 2rem
+                text-align: right
+
+    
+    
+.attribution 
+    font-size: 11px
+    text-align: center
+    a 
+        color: hsl(228, 45%, 44%)
+
+@media (max-width: 1120px)
+    html
+        font-size: 14px
+    
+    body
+        main
+            .intro
+                padding: 1.5rem
+                background-image: url("/images/bg-hero-mobile.svg")
+                height: 100%
+                header
+                    button
+                        width: 110px
+                    img
+                        height: 20px
+                .container
+                    flex-direction: column
+                    max-width: 90%
+                    .text
+                        text-align: center
+                        h1
+                            margin-top: 6rem
+                            font-size: 1.8rem
+                        p
+                            font-size: 1.13rem
+                        button
+                            width: 75%
+                    img
+                        width: 100%
+                        margin-bottom: 1rem
+            .cards
+                padding-inline: 1.5rem
+                article
+                    align-items: center
+                    max-width: 1280px
+                    margin: auto
+                    padding: 3rem
+                    justify-content: space-between
+                    margin-bottom: 3rem
+                    flex-direction: column-reverse
+                    text-align: center
+                .flowing-conversations
+                    flex-direction: column
+            .ready-to-build
+                width: 90%
+                h2
+                    font-size: 1.1rem
+                button
+                    width: 70%
+                    padding: 1rem
+        footer
+            .footer
+                margin-top: 40px
+                .container
+                    flex-direction: column
+                    font-size: 1rem
+                    div
+                        margin-bottom: 30px
+                    .about-us
+                        margin-bottom: 15px
+                    .social
+                        margin: auto
+                        a
+                            margin-left: 0
+                            margin-inline: 5px 
+                .copyright
+                    padding-block: 1rem
+                    text-align: center

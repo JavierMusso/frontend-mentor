@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+
+  background-color: var(--red);
+  background-image: url("./images/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+
+  background-position-x: fixed;
+  background-size: auto 100vh;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1110px;
+}
+
+.left {
+  color: white;
+  margin-right: 20px;
+  width: 50%;
+  transform: translateY(-200%);
+  animation: comeindown 0.3s ease forwards;
+  opacity: 0;
+}
+
+.left h1 {
+  font-size: 49px;
+}
+
+.left p {
+  line-height: 1.6;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  transform: translateY(200%);
+  animation: comeinup 0.3s ease forwards;
+  opacity: 0;
+}
+
+.right p {
+  text-align: center;
+  background-color: var(--blue);
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  color: white;
+  font-weight: 600;
+}
+
+.right p span {
+  color: var(--grayish-blue);
+  font-weight: 400;
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  margin-top: 8px;
+}
+
+form input {
+  padding: 16px 0px 16px 30px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+  font-size: 14px;
+  width: 100%;
+}
+
+form input:focus {
+  outline: solid 1px var(--blue);
+}
+
+form div {
+  position: relative;
+  text-align: right;
+  margin-top: 20px;
+}
+
+form .first-name {
+  margin-top: 0px;
+}
+
+form div small {
+  display: none;
+  font-style: italic;
+  color: var(--red);
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+form div img {
+  display: none;
+  top: 14px;
+  right: 25px;
+  position: absolute;
+  width: 24px;
+}
+
+form div.btn {
+  height: 44px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+form button {
+  padding: 14px;
+  border-radius: 5px;
+  border: 0;
+  background: var(--green);
+  color: white;
+  font-weight: 500;
+  box-shadow: 0px 4px 0px 0px rgb(49, 179, 122);
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  transition: opacity 0.2s ease;
+  width: 100%;
+  height: 100%;
+}
+
+form button:hover {
+  opacity: 0.5;
+}
+
+form button:active {
+  box-shadow: none;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+form .ToS {
+  font-size: 11px;
+  text-align: center;
+  color: var(--grayish-blue);
+}
+
+form .ToS a {
+  color: var(--red);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* 
+Error stance
+ */
+
+form div.error input {
+  border: 2px solid var(--red);
+}
+
+form div.error img {
+  display: block;
+}
+
+form div.error small {
+  display: block;
+}
+
+/* 
+Mobile view
+ */
+
+@media (max-width: 1120px) {
+  body {
+    background-image: url("./images/bg-intro-mobile.png");
+    text-align: center;
+    background-position-x: fixed;
+    background-size: 100vw;
+    background-position: center;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 85vw;
+    margin-top: 40px;
+  }
+
+  .left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .left h1 {
+    font-size: 30px;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .right p {
+    padding: 20px 50px 20px 50px;
+    line-height: 1.7;
+  }
+
+  form {
+    padding: 10px 30px;
+    margin-bottom: 20px;
+  }
+
+  form input {
+    padding: 16px 0px 16px 15px;
+  }
+}
+
+/* 
+Keyframes animations
+ */
+
+@keyframes comeindown {
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes comeinup {
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,388 @@
+$dark-blue-intro: hsl(217, 28%, 15%)
+$dark-blue-background: hsl(218, 28%, 13%)
+$dark-blue-footer: hsl(216, 53%, 9%)
+$dark-blue-testimonials: hsl(219, 30%, 18%)
+$cyan: hsl(176, 68%, 64%)
+$blue: hsl(198, 60%, 50%)
+$light-red: hsl(0, 100%, 63%)
+    
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+html
+    font-family: "Open Sans", sans-serif
+    font-size: 14px
+
+h1,h2
+    font-family: "Raleway", sans-serif
+    font-weight: 700
+    
+body
+    background-color: $dark-blue-intro
+    color: white
+    header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        max-width: 1376px
+        margin-inline: auto
+        padding: 3rem
+        img
+            height: 3.7rem
+        nav
+            font-family: "Raleway", sans-serif
+            font-size: 1rem
+            display: flex
+            gap: 3rem
+            a
+                color: white
+                text-decoration: none
+            a:hover
+                font-weight: 700
+                text-decoration: underline
+    main
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        .top
+            background-image: url("./images/bg-curvy-desktop.svg")
+            background-repeat: no-repeat
+            width: 100%
+            background-size: 100vw
+            background-position: bottom
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            .intro
+                max-width: 720px
+                margin-bottom: 180px
+                h1
+                    margin-block: 30px
+                    font-size: 2.8rem
+                    line-height: 1.4
+                p
+                    font-size: 1.4rem
+                    max-width: 80%
+                    margin: auto
+                button
+                    color: white
+                    font-weight: 700
+                    margin: 30px
+                    width: 20rem
+                    border: none
+                    border-radius: 50px
+                    background-color: $cyan
+                    padding-block: 1rem
+                    cursor: pointer
+                    transition: background-color 0.2s ease
+                button:hover
+                    background-color: hsl(176, 68%, 80%)
+        .bottom
+            width: 100%
+            background-color: $dark-blue-background
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            .grid
+                margin-top: 0
+                margin-bottom: 3rem
+                max-width: 930px
+                display: grid
+                grid-template-columns: 1fr 1fr
+                div
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    padding: 65px
+                    padding-top: 0
+                    img
+                        height: 6rem
+                    h2
+                        margin-block: 10px 
+                    p
+                        font-size: 0.9rem
+            .stay-productive
+                display: flex
+                align-items: center
+                max-width: 1230px
+                gap: 50px
+                .text
+                    text-align: left
+                    h2
+                        font-size: 3rem
+                        line-height: 1.4
+                    p
+                        margin-block: 20px 
+                        font-size: 1.2rem
+                    a
+                        display: flex
+                        align-items: center
+                        width: 148px
+                        color: $cyan
+                        text-decoration: none
+                        border-bottom: 1px solid $cyan
+                        img
+                            height: 100%
+                            display: inline
+                    a:hover
+                        color: white
+                        border-bottom: 1px solid white
+                        svg
+                            fill: white
+            .testimonials
+                margin-block: 10rem
+                max-width: 1180px
+                display: flex
+                gap: 40px
+                background-image: url("./images/bg-quotes.png")
+                background-repeat: no-repeat
+                padding: 30px 15px 0px 15px
+
+                article
+                    width: 360px
+                    height: 200px
+                    text-align: left
+                    background-color: $dark-blue-testimonials
+                    padding: 2rem
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    border-radius: 10px
+                    box-shadow: 5px 5px 9px hsla(219, 30%, 18%, 0.4)
+                    p
+                        font-size: 1.05rem
+                    div
+                        display: flex
+                        align-items: center
+                        gap: 10px
+                        img
+                            height: 25px
+                            border-radius: 50px
+                        h2
+                            font-size: 0.7rem
+                            font-weight: 700
+                            line-height: 1.2
+                            span
+                                font-size: 0.5rem
+                                font-weight: 400
+            .early-access
+                background-color: $dark-blue-intro
+                max-width: 865px
+                height: 275px
+                border-radius: 10px
+                padding: 40px
+                box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.3)
+                margin-bottom: -110px
+                h2
+                    font-size: 2.2rem
+                    margin-bottom: 15px
+                p
+                    margin: auto
+                    max-width: 80%
+                    margin-bottom: 40px
+                form
+                    
+                    display: flex
+                    max-width: 90%
+                    margin: auto
+                    gap: 2rem
+                    position: relative
+                    input
+                        border: none
+                        border-radius: 50px
+                        padding-inline: 2rem
+                    .email
+                        height: 50px
+                        flex-grow: 1
+                    .submit
+                        color: white
+                        font-weight: 700
+                        background-color: $cyan
+                        cursor: pointer
+                        transition: background-color 0.2s ease
+                    .submit:hover
+                        background-color: hsl(176, 68%, 80%)
+                    small
+                        display: none
+                        position: absolute
+                        top: 55px
+                        left: 2rem
+                        color: $light-red
+                .error
+                    small
+                        display: block
+
+    footer
+        background-color: $dark-blue-footer
+        padding: 10rem
+        padding-bottom: 0
+        .logo
+            margin-top: 3rem
+        .container
+            margin-top: 2.5rem
+            margin-inline: auto 
+            max-width: 1240px
+            display: flex
+            justify-content: space-between
+            .fylo
+                div
+                    display: flex
+                    gap: 2rem
+                    img
+                        height: 100%
+                        margin-top: 5px
+                    p
+                        width: 300px
+            .contact
+                p
+                    margin: 1.5rem
+                    margin-top: 0
+                    img
+                        margin-right: 1rem
+                        display: inline
+            .about-us, .terms
+                display: flex
+                flex-direction: column
+                gap: 1rem
+                width: 100px
+                a
+                    color: white
+                    text-decoration: none
+                a:hover
+                    font-weight: 700
+            .social
+                display: flex
+                gap: 2rem
+                a
+                    color: white
+                    text-align: center
+                    font-size: 1.5rem
+                    width: 40px
+                    height: 40px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    text-decoration: none
+                    border-radius: 50px
+                    border: 1px solid white
+                    transition: all 0.2s ease
+                a:hover
+                    border: 1px solid $cyan
+                    color: $cyan
+        .attribution
+            margin-top: 5rem
+            font-size: 1rem
+            text-align: center
+            a
+                color: hsl(228, 45%, 44%)
+
+@media ( max-width: 1000px )
+    html
+        font-size: 10px
+    body
+        header
+            nav
+                gap: 1.5rem
+        main
+            .top
+                background-image: url("./images/bg-curvy-mobile.svg")
+                .intro
+                    padding-inline: 3rem 
+                    margin: 0
+                    margin-bottom: 100px
+                    h1
+                        font-size: 2.5rem
+                    p
+                        margin: 0
+                        max-width: 95%
+                    button
+                        font-size: 1.5rem
+            .bottom
+
+                .grid
+                    grid-template-columns: 1fr
+                    div
+                        padding: 3rem
+                        h2
+                            font-size: 2rem
+                        p
+                            font-size: 1.4rem
+                .stay-productive
+                    flex-direction: column
+                    padding: 3rem
+                    .text
+                        p
+                            font-size: 1.4rem
+                        a
+                            font-size: 1.4rem
+                .testimonials
+                    flex-direction: column
+                    padding: 4rem
+                    max-width: 100%
+                    article
+                        max-width: 100%
+                        height: auto
+                        p
+                            font-size: 1.1rem
+                            margin-top: 10px
+                            line-height: 2
+                            margin-bottom: 10px
+                        div
+                            h2
+                                font-size: 1.2rem
+                                letter-spacing: 1px
+                                span
+                                    font-size: 0.8rem
+                .early-access
+                    max-width: 90%
+                    height: auto
+                    h2
+                        font-size: 1.8rem
+                    p
+                        font-size: 1.3rem
+                        max-width: 100%
+                        margin-block: auto 
+                        margin-bottom: 2.5rem
+                        line-height: 1.7
+                    form
+                        max-width: 100%
+                        flex-direction: column
+                        .email
+                            height: 40px
+                        .submit
+                            font-size: 1.5rem
+                            height: 40px
+        footer
+            padding: 4rem
+            padding-top: 14rem
+            .container
+                flex-direction: column
+                div
+                    font-size: 1.5rem
+                    margin-bottom: 50px
+
+                .fylo
+                    margin-bottom: 0
+                    div
+                        margin-bottom: 0
+                    p
+                        margin-bottom: 2rem
+                .contact
+                    p
+                        margin-left: 0
+                .social
+                    margin-inline: auto
+                    margin-bottom: 0
+                        
+    
+                
+
+
+
+
+
+
+
+
+

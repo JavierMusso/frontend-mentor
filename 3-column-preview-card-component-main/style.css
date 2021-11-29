@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  background-color: var(--very-light-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparent-white);
+  font-size: 15px;
+}
+
+main {
+  width: 920px;
+  height: 500px;
+  display: flex;
+  transition: all 0.2s ease-in-out;
+}
+
+main article {
+  padding: 50px;
+}
+
+main h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: var(--very-light-gray);
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+main p {
+  line-height: 1.7;
+}
+
+main button {
+  height: 50px;
+  width: 150px;
+  border-radius: 25px;
+  border: none;
+  margin-top: 70px;
+  background-color: var(--very-light-gray);
+}
+
+main button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid var(--very-light-gray);
+  color: var(--very-light-gray);
+  transition: all 0.2s ease;
+}
+
+.btn-sedans {
+  color: var(--bright-orange);
+}
+
+.btn-suvs {
+  color: var(--dark-cyan);
+}
+
+.btn-luxury {
+  color: var(--very-dark-cyan);
+}
+
+.sedans {
+  background-color: var(--bright-orange);
+  border-radius: 10px 0 0 10px;
+}
+
+.suvs {
+  background-color: var(--dark-cyan);
+}
+
+.luxury {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+
+footer {
+  color: black;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 950px) {
+  main {
+    flex-direction: column;
+    width: 327px;
+    height: 1326px;
+    margin-top: 100px;
+
+    transition: all 0.2s ease;
+  }
+
+  main button {
+    margin-top: 10px;
+  }
+
+  .sedans {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 10px 10px;
+  }
+}

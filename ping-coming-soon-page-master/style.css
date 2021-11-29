@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dar-blue: hsl(209, 33%, 12%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .logo {
+  margin-top: 40px;
+}
+
+.container h1 {
+  color: var(--gray);
+  font-weight: 300;
+  font-size: 46px;
+  letter-spacing: 1px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.container span {
+  color: var(--very-dar-blue);
+  font-weight: 700;
+}
+
+.container p {
+  color: var(--very-dar-blue);
+  font-weight: 400;
+  margin: 0px;
+}
+
+form {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+form .email {
+  border-radius: 50px;
+  width: 420px;
+  margin-right: 10px;
+  padding: 16px 0px 16px 24px;
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+form .email::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+form .submit {
+  border-radius: 50px;
+  width: 200px;
+  border: 0;
+  padding: 17px;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: var(--blue);
+  color: white;
+  box-shadow: 0px 3px 10px 1px hsla(223, 87%, 63%, 0.5);
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+form .submit:hover {
+  opacity: 0.9;
+}
+
+form .error-text {
+  display: none;
+  position: absolute;
+  left: 24px;
+  top: 60px;
+  color: var(--light-red);
+  font-size: 13px;
+  font-style: italic;
+}
+
+/* 
+Error stance
+ */
+
+form.error .email {
+  border: 1px solid var(--light-red);
+}
+
+form.error .error-text {
+  display: block;
+}
+
+.container .dashboard {
+  width: 640px;
+  margin-bottom: 30px;
+}
+
+.container .copyright {
+  font-size: 13px;
+  color: var(--gray);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 700px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    width: 80%;
+    margin: 0;
+    margin-top: 30px;
+    height: 100vh;
+  }
+
+  .container h1 {
+    font-size: 30px;
+  }
+
+  .container p {
+    margin-bottom: 30px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  form .email {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  form .submit {
+    width: 100%;
+    margin: 0;
+  }
+
+  .container .dashboard {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+}

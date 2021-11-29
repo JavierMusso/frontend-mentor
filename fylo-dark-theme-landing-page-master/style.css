@@ -1,0 +1,613 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+h1, h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+body {
+  background-color: #1c2431;
+  color: white;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1376px;
+  margin-inline: auto;
+  padding: 3rem;
+}
+
+body header img {
+  height: 3.7rem;
+}
+
+body header nav {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+
+body header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+body header nav a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body main .top {
+  background-image: url("./images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: 100vw;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .top .intro {
+  max-width: 720px;
+  margin-bottom: 180px;
+}
+
+body main .top .intro h1 {
+  margin-block: 30px;
+  font-size: 2.8rem;
+  line-height: 1.4;
+}
+
+body main .top .intro p {
+  font-size: 1.4rem;
+  max-width: 80%;
+  margin: auto;
+}
+
+body main .top .intro button {
+  color: white;
+  font-weight: 700;
+  margin: 30px;
+  width: 20rem;
+  border: none;
+  border-radius: 50px;
+  background-color: #65e2d9;
+  padding-block: 1rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+body main .top .intro button:hover {
+  background-color: #a9efea;
+}
+
+body main .bottom {
+  width: 100%;
+  background-color: #181f2a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .bottom .grid {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  max-width: 930px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+body main .bottom .grid div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 65px;
+  padding-top: 0;
+}
+
+body main .bottom .grid div img {
+  height: 6rem;
+}
+
+body main .bottom .grid div h2 {
+  margin-block: 10px;
+}
+
+body main .bottom .grid div p {
+  font-size: 0.9rem;
+}
+
+body main .bottom .stay-productive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1230px;
+  gap: 50px;
+}
+
+body main .bottom .stay-productive .text {
+  text-align: left;
+}
+
+body main .bottom .stay-productive .text h2 {
+  font-size: 3rem;
+  line-height: 1.4;
+}
+
+body main .bottom .stay-productive .text p {
+  margin-block: 20px;
+  font-size: 1.2rem;
+}
+
+body main .bottom .stay-productive .text a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 148px;
+  color: #65e2d9;
+  text-decoration: none;
+  border-bottom: 1px solid #65e2d9;
+}
+
+body main .bottom .stay-productive .text a img {
+  height: 100%;
+  display: inline;
+}
+
+body main .bottom .stay-productive .text a:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+body main .bottom .stay-productive .text a:hover svg {
+  fill: white;
+}
+
+body main .bottom .testimonials {
+  margin-block: 10rem;
+  max-width: 1180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  background-image: url("./images/bg-quotes.png");
+  background-repeat: no-repeat;
+  padding: 30px 15px 0px 15px;
+}
+
+body main .bottom .testimonials article {
+  width: 360px;
+  height: 200px;
+  text-align: left;
+  background-color: #202a3c;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 9px rgba(32, 42, 60, 0.4);
+          box-shadow: 5px 5px 9px rgba(32, 42, 60, 0.4);
+}
+
+body main .bottom .testimonials article p {
+  font-size: 1.05rem;
+}
+
+body main .bottom .testimonials article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+body main .bottom .testimonials article div img {
+  height: 25px;
+  border-radius: 50px;
+}
+
+body main .bottom .testimonials article div h2 {
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+body main .bottom .testimonials article div h2 span {
+  font-size: 0.5rem;
+  font-weight: 400;
+}
+
+body main .bottom .early-access {
+  background-color: #1c2431;
+  max-width: 865px;
+  height: 275px;
+  border-radius: 10px;
+  padding: 40px;
+  -webkit-box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.3);
+  margin-bottom: -110px;
+}
+
+body main .bottom .early-access h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+body main .bottom .early-access p {
+  margin: auto;
+  max-width: 80%;
+  margin-bottom: 40px;
+}
+
+body main .bottom .early-access form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 90%;
+  margin: auto;
+  gap: 2rem;
+  position: relative;
+}
+
+body main .bottom .early-access form input {
+  border: none;
+  border-radius: 50px;
+  padding-inline: 2rem;
+}
+
+body main .bottom .early-access form .email {
+  height: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+body main .bottom .early-access form .submit {
+  color: white;
+  font-weight: 700;
+  background-color: #65e2d9;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+body main .bottom .early-access form .submit:hover {
+  background-color: #a9efea;
+}
+
+body main .bottom .early-access form small {
+  display: none;
+  position: absolute;
+  top: 55px;
+  left: 2rem;
+  color: #ff4242;
+}
+
+body main .bottom .early-access .error small {
+  display: block;
+}
+
+body footer {
+  background-color: #0b1523;
+  padding: 10rem;
+  padding-bottom: 0;
+}
+
+body footer .logo {
+  margin-top: 3rem;
+}
+
+body footer .container {
+  margin-top: 2.5rem;
+  margin-inline: auto;
+  max-width: 1240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body footer .container .fylo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+body footer .container .fylo div img {
+  height: 100%;
+  margin-top: 5px;
+}
+
+body footer .container .fylo div p {
+  width: 300px;
+}
+
+body footer .container .contact p {
+  margin: 1.5rem;
+  margin-top: 0;
+}
+
+body footer .container .contact p img {
+  margin-right: 1rem;
+  display: inline;
+}
+
+body footer .container .about-us, body footer .container .terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  width: 100px;
+}
+
+body footer .container .about-us a, body footer .container .terms a {
+  color: white;
+  text-decoration: none;
+}
+
+body footer .container .about-us a:hover, body footer .container .terms a:hover {
+  font-weight: 700;
+}
+
+body footer .container .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+body footer .container .social a {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 1px solid white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+body footer .container .social a:hover {
+  border: 1px solid #65e2d9;
+  color: #65e2d9;
+}
+
+body footer .attribution {
+  margin-top: 5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+body footer .attribution a {
+  color: #3e52a3;
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 10px;
+  }
+  body header nav {
+    gap: 1.5rem;
+  }
+  body main .top {
+    background-image: url("./images/bg-curvy-mobile.svg");
+  }
+  body main .top .intro {
+    padding-inline: 3rem;
+    margin: 0;
+    margin-bottom: 100px;
+  }
+  body main .top .intro h1 {
+    font-size: 2.5rem;
+  }
+  body main .top .intro p {
+    margin: 0;
+    max-width: 95%;
+  }
+  body main .top .intro button {
+    font-size: 1.5rem;
+  }
+  body main .bottom .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  body main .bottom .grid div {
+    padding: 3rem;
+  }
+  body main .bottom .grid div h2 {
+    font-size: 2rem;
+  }
+  body main .bottom .grid div p {
+    font-size: 1.4rem;
+  }
+  body main .bottom .stay-productive {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem;
+  }
+  body main .bottom .stay-productive .text p {
+    font-size: 1.4rem;
+  }
+  body main .bottom .stay-productive .text a {
+    font-size: 1.4rem;
+  }
+  body main .bottom .testimonials {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 4rem;
+    max-width: 100%;
+  }
+  body main .bottom .testimonials article {
+    max-width: 100%;
+    height: auto;
+  }
+  body main .bottom .testimonials article p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    line-height: 2;
+    margin-bottom: 10px;
+  }
+  body main .bottom .testimonials article div h2 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+  body main .bottom .testimonials article div h2 span {
+    font-size: 0.8rem;
+  }
+  body main .bottom .early-access {
+    max-width: 90%;
+    height: auto;
+  }
+  body main .bottom .early-access h2 {
+    font-size: 1.8rem;
+  }
+  body main .bottom .early-access p {
+    font-size: 1.3rem;
+    max-width: 100%;
+    margin-block: auto;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+  }
+  body main .bottom .early-access form {
+    max-width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .bottom .early-access form .email {
+    height: 40px;
+  }
+  body main .bottom .early-access form .submit {
+    font-size: 1.5rem;
+    height: 40px;
+  }
+  body footer {
+    padding: 4rem;
+    padding-top: 14rem;
+  }
+  body footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body footer .container div {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
+  body footer .container .fylo {
+    margin-bottom: 0;
+  }
+  body footer .container .fylo div {
+    margin-bottom: 0;
+  }
+  body footer .container .fylo p {
+    margin-bottom: 2rem;
+  }
+  body footer .container .contact p {
+    margin-left: 0;
+  }
+  body footer .container .social {
+    margin-inline: auto;
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

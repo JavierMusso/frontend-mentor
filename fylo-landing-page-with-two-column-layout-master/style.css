@@ -1,0 +1,635 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 100vw;
+  margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #070439;
+  border-radius: 100vw;
+  border: 2px solid #585989;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #005266;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #070439;
+  overflow: overlay;
+}
+
+body header {
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+
+body header nav a {
+  text-decoration: none;
+}
+
+body main .top {
+  padding-inline: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .top .right {
+  padding: 20px;
+  width: 50%;
+}
+
+body main .top .right h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+body main .top .right p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-block: 20px;
+}
+
+body main .top .right form {
+  position: relative;
+  font-size: 0.9rem;
+  font-family: "Opera Sans", sans-serif;
+}
+
+body main .top .right form .top-email {
+  width: 360px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border: 1px solid #bfbfbf;
+  padding: 0px 0px 0px 15px;
+}
+
+body main .top .right form .top-email::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+body main .top .right form .top-email:-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+body main .top .right form .top-email::-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+body main .top .right form .top-email::placeholder {
+  color: #bfbfbf;
+}
+
+body main .top .right form .top-submit {
+  color: white;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  background-color: #3065f8;
+  -webkit-box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+body main .top .right form .top-submit:hover {
+  opacity: 0.7;
+}
+
+body main .top .right form small {
+  display: none;
+  position: absolute;
+  color: red;
+  margin-left: 15px;
+  top: 45px;
+}
+
+body main .top .right .top-error .top-email {
+  border: 1px solid red;
+}
+
+body main .top .right .top-error small {
+  display: block;
+}
+
+body main .top .left {
+  padding: 20px;
+  width: 50%;
+}
+
+body main .bg-img {
+  width: 100%;
+  height: 200px;
+  background-image: url("./images/bg-curve-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+body main .bottom {
+  background-color: #f6f6fe;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .bottom .right {
+  padding: 20px;
+}
+
+body main .bottom .right h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+body main .bottom .right p {
+  width: 95%;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+body main .bottom .right a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 162px;
+  color: #3c9f8f;
+  text-decoration: none;
+  border-bottom: 1px solid #3c9f8f;
+}
+
+body main .bottom .right a img {
+  height: 100%;
+  display: inline;
+}
+
+body main .bottom .right .card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 5px;
+  width: 350px;
+  margin-top: 40px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+body main .bottom .right .card img {
+  margin-bottom: 15px;
+}
+
+body main .bottom .right .card p {
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+body main .bottom .right .card .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+body main .bottom .right .card .profile img {
+  width: 35px;
+  border-radius: 50px;
+  margin: 0;
+}
+
+body main .bottom .right .card .profile p {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+body main .bottom .right .card .profile p span {
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+
+body main .bottom .left {
+  padding: 20px;
+}
+
+body footer .early-access {
+  color: white;
+  background-color: #585989;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5%;
+}
+
+body footer .early-access .left {
+  width: 50%;
+}
+
+body footer .early-access .left h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+body footer .early-access .left p {
+  width: 490px;
+}
+
+body footer .early-access .right {
+  widows: 50%;
+}
+
+body footer .early-access .right form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 0.8rem;
+  width: 500px;
+}
+
+body footer .early-access .right form .bot-email {
+  height: 40px;
+  max-width: 100%;
+  border-radius: 3px;
+  border: none;
+  padding: 0px 0px 0px 10px;
+  -webkit-box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+body footer .early-access .right form .bot-submit {
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-weight: 600;
+  height: 40px;
+  background-color: #3065f8;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  border: none;
+  border-radius: 3px;
+  width: 180px;
+  margin-top: 10px;
+  -webkit-box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+body footer .early-access .right form .bot-submit:hover {
+  opacity: 0.7;
+}
+
+body footer .early-access .right form small {
+  display: none;
+  color: white;
+  margin-left: 10px;
+}
+
+body footer .early-access .right .bot-error .bot-email {
+  border: 1px solid red;
+}
+
+body footer .early-access .right .bot-error small {
+  display: block;
+}
+
+body footer .contact {
+  background-color: #070439;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body footer .contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+body footer .contact a {
+  color: white;
+  text-decoration: none;
+}
+
+body footer .contact a:hover {
+  color: #3065f8;
+}
+
+body footer .contact ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+
+body footer .contact li {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer .contact li:hover {
+  background-color: #3065f8;
+}
+
+body footer .contact .column-one {
+  margin-bottom: 50px;
+}
+
+body footer .contact .column-one img {
+  display: inline;
+  margin-block: 10px;
+}
+
+body footer .contact .column-one p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+body footer .contact .column-three {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 70px;
+}
+
+body footer .contact .column-four {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background-color: #070439;
+  color: #3065f8;
+}
+
+.attribution a {
+  color: #585989;
+}
+
+@media (max-width: 1000px) {
+  body {
+    font-size: 13px;
+    text-align: center;
+  }
+  body header img {
+    width: 100px;
+  }
+  body header nav {
+    gap: 10px;
+  }
+  body main .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+  }
+  body main .top .left {
+    padding: 0;
+    width: 100%;
+  }
+  body main .top .left img {
+    padding: 0;
+  }
+  body main .top .right {
+    width: 100%;
+    padding: 0;
+  }
+  body main .top .right h1 {
+    font-size: 1.6rem;
+  }
+  body main .top .right p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  body main .top .right form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+  }
+  body main .top .right form .top-email {
+    width: 100%;
+    margin: 0;
+  }
+  body main .top .right form .top-submit {
+    width: 100%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0;
+  }
+  body main .top .right form small {
+    top: 40px;
+  }
+  body main .bg-img {
+    height: 130px;
+  }
+  body main .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body main .bottom .left {
+    padding: 0;
+  }
+  body main .bottom .right {
+    margin-top: 100px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .bottom .right h1 {
+    font-size: 1rem;
+  }
+  body main .bottom .right p {
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  body main .bottom .right a {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: auto;
+    width: 140px;
+    gap: 5px;
+    margin: auto;
+    margin-block: 30px;
+  }
+  body main .bottom .right .card {
+    padding: 30px 10px 30px 30px;
+    width: 80%;
+    margin: 0;
+  }
+  body main .bottom .right .card p {
+    font-size: 0.6rem;
+  }
+  body main .bottom .right .card .profile p {
+    font-size: 0.8rem;
+  }
+  body footer .early-access {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body footer .early-access .left {
+    margin-top: 30px;
+    width: 100%;
+  }
+  body footer .early-access .left h2 {
+    font-size: 1rem;
+  }
+  body footer .early-access .left p {
+    width: 100%;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+  body footer .early-access .right {
+    width: 70%;
+  }
+  body footer .early-access .right form {
+    width: 100%;
+  }
+  body footer .early-access .right form .bot-email {
+    width: 100%;
+  }
+  body footer .early-access .right form .bot-submit {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  body footer .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10%;
+    gap: 40px;
+  }
+  body footer .contact div {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    text-align: left;
+  }
+  body footer .contact .column-one {
+    margin: 0;
+  }
+  body footer .contact .column-one p {
+    height: 30px;
+  }
+  body footer .contact .column-three {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+$very-dark-blue: hsl(243, 87%, 12%)
+$desaturated-blue: hsl(238, 22%, 44%)
+$bright-blue: hsl(224, 93%, 58%)
+$moderate-cyan: hsl(170, 45%, 43%)
+$light-grayish-blue: hsl(240, 75%, 98%)
+$light-gray: hsl(0, 0%, 75%)
+
+::-webkit-scrollbar
+    width: 1em;
+
+::-webkit-scrollbar-track
+    background: transparent;
+    border-radius: 100vw
+    margin-block: .5em
+
+::-webkit-scrollbar-thumb
+    background: $very-dark-blue;
+    border-radius: 100vw
+    border: 2px solid $desaturated-blue
+    transition: background 0.2s ease
+
+::-webkit-scrollbar-thumb:hover
+    background: hsl(192, 100%, 20%);
+
+body
+    font-family: "Open Sans", sans-serif
+    color: $very-dark-blue
+    overflow: overlay
+    header
+        padding: 5%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        nav
+            display: flex
+            gap: 50px      
+            a 
+                text-decoration: none     
+    main
+        
+        .top
+            padding-inline: 5%  
+            display: flex
+            align-items: center
+            .right
+                padding: 20px
+                width: 50%
+                h1
+                    font-family: "Raleway", sans-serif
+                    font-weight: 700
+                    font-size: 2.5rem
+                p
+                    font-size: 1.25rem
+                    font-weight: 400
+                    line-height: 1.2
+                    margin-block: 20px
+                form
+                    position: relative
+                    font-size: 0.9rem
+                    font-family: "Opera Sans", sans-serif
+
+                    .top-email
+                        width: 360px
+                        height: 40px
+                        margin-right: 10px
+                        border-radius: 3px
+                        border: 1px solid $light-gray
+                        padding: 0px 0px 0px 15px
+                    .top-email::placeholder
+                        color: $light-gray
+                    .top-submit
+                        color: white
+                        width: 200px
+                        height: 40px
+                        border: none
+                        border-radius: 3px
+                        background-color: $bright-blue
+                        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2)
+                        cursor: pointer
+                        transition: opacity 0.2s ease
+                    .top-submit:hover
+                        opacity: 0.7
+
+                    small
+                        display: none
+                        position: absolute
+                        color: red
+                        margin-left: 15px
+                        top: 45px
+                .top-error
+                    .top-email
+                        border: 1px solid red
+                    small
+                        display: block
+
+            .left
+                padding: 20px
+                width: 50%
+
+        .bg-img
+            width: 100%
+            height: 200px
+            background-image: url("./images/bg-curve-desktop.svg")
+            background-repeat: no-repeat
+            background-size: 100%
+            background-position: bottom
+
+        .bottom
+            background-color: $light-grayish-blue
+            padding: 5%
+            display: flex
+            .right
+                padding: 20px
+                h1
+                    font-family: "Raleway", sans-serif
+                    font-size: 2.3rem
+                    font-weight: 700
+                    margin-bottom: 20px
+                p
+                    width: 95%
+                    font-size: 1rem
+                    margin-bottom: 20px
+                a
+                    display: flex
+                    align-items: center
+                    width: 162px
+                    color: $moderate-cyan
+                    text-decoration: none
+                    border-bottom: 1px solid $moderate-cyan
+                    img
+                        height: 100%
+                        display: inline
+                .card
+                    background-color: white
+                    padding: 40px
+                    border-radius: 5px
+                    width: 350px
+                    margin-top: 40px
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
+                    img
+                        margin-bottom: 15px
+                    p
+                        width: 100%
+                        font-size: 0.8rem
+                    .profile
+                        display: flex
+                        align-items: center
+                        gap: 10px
+                        img
+                            width: 35px
+                            border-radius: 50px
+                            margin: 0
+                        p
+                            font-family: "Raleway", sans-serif
+                            margin: 0
+                            line-height: 1.2
+                            font-weight: 700
+                            span
+                                font-size: 0.6rem
+                                font-weight: 400
+            .left
+                padding: 20px
+            
+    footer
+        
+        .early-access
+            color: white
+            background-color: $desaturated-blue
+            display: flex
+            align-items: center
+            padding: 5%
+            .left
+                width: 50%
+                h2
+                    font-family: "Raleway", sans-serif
+                    font-size: 2rem
+                    margin-bottom: 20px
+                p
+                    width: 490px
+            .right
+                widows: 50%
+                form
+                    display: flex
+                    flex-direction: column
+                    font-size: 0.8rem
+                    width: 500px
+                    .bot-email
+                        height: 40px
+                        max-width: 100%
+                        border-radius: 3px
+                        border: none
+                        padding: 0px 0px 0px 10px
+                        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2)
+                    .bot-submit
+                        padding: 0
+                        font-family: "Raleway", sans-serif
+                        color: white
+                        font-weight: 600
+                        height: 40px
+                        background-color: $bright-blue
+                        cursor: pointer
+                        transition: opacity 0.2s ease
+                        border: none
+                        border-radius: 3px
+                        width: 180px
+                        margin-top: 10px
+                        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2)
+
+                    .bot-submit:hover
+                        opacity: 0.7
+                    small
+                        display: none
+                        color: white
+                        margin-left: 10px
+                .bot-error
+                    .bot-email
+                        border: 1px solid red
+                    small
+                        display: block
+
+        .contact
+            background-color: $very-dark-blue
+            color: white
+            display: flex
+            padding: 5%
+            align-items: center
+            justify-content: space-around
+            div
+                display: flex
+                flex-direction: column
+                gap: 10px
+                align-self: flex-end
+            a
+                color: white
+                text-decoration: none
+            a:hover
+                color: $bright-blue
+            ul
+                list-style: none
+                display: flex
+                gap: 10px
+                padding: 0
+            li
+                width: 30px
+                height: 30px
+                border-radius: 50px
+                border: 1px solid white
+                display: flex
+                align-items: center
+                justify-content: center
+            li:hover
+                background-color: $bright-blue
+            .column-one
+                margin-bottom: 50px
+                img
+                    display: inline
+                    margin-block: 10px 
+                p
+                    display: flex
+                    align-items: center
+                    gap: 15px
+            .column-three
+                align-self: center
+                margin-top: 70px
+            .column-four
+                align-self: center
+                font-size: 1rem
+                
+
+
+.attribution 
+    font-size: 11px
+    text-align: center
+    background-color: $very-dark-blue
+    color: $bright-blue
+    a 
+        color: $desaturated-blue
+
+
+@media ( max-width: 1000px )
+    body
+        font-size: 13px
+        text-align: center
+        header
+            img
+                width: 100px
+            nav
+                gap: 10px
+        main
+
+            .top
+                flex-direction: column-reverse
+                width: 100%
+                .left
+                    padding: 0
+                    width: 100%
+                    img
+                        padding: 0
+                .right
+                    width: 100%
+                    padding: 0
+                    h1
+                        font-size: 1.6rem
+                    p
+                        font-size: 1rem
+                        line-height: 1.6
+                    form
+                        display: flex
+                        flex-direction: column
+                        gap: 15px
+                        .top-email
+                            width: 100%
+                            margin: 0
+                        .top-submit
+                            width: 100%
+                            font-weight: 600
+                            letter-spacing: 1px
+                            padding: 0
+                        small
+                            top: 40px
+            .bg-img
+                height: 130px
+            .bottom
+                flex-direction: column-reverse
+                .left
+                    padding: 0
+                .right
+                    margin-top: 100px
+                    padding: 0
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    h1
+                        font-size: 1rem
+                    p
+                        margin: 0
+                        width: 100%
+                        text-align: left
+                        font-size: 0.9rem
+                        margin-bottom: 20px 
+                    a
+                        align-items: center
+                        justify-content: center
+                        width: auto
+                        width: 140px
+                        gap: 5px
+                        margin: auto
+                        margin-block: 30px 
+                    .card
+                        padding: 30px 10px 30px 30px
+                        width: 80%
+                        margin: 0
+                        p
+                            font-size: 0.6rem
+                        .profile
+                            p
+                                font-size: 0.8rem
+        footer
+            .early-access
+                text-align: center
+                flex-direction: column
+                .left
+                    margin-top: 30px
+                    width: 100%
+                    h2
+                        font-size: 1rem
+                    p
+                        width: 100%
+                        padding: 20px
+                        font-size: 0.9rem
+                .right
+                    width: 70%
+                    form
+                        width: 100% 
+                        .bot-email
+                            width: 100%
+                        .bot-submit
+                            width: 100%
+                            padding: 0
+                            margin-bottom: 50px
+            .contact
+                flex-direction: column
+                justify-content: center
+                padding: 10%
+                gap: 40px
+                div
+                    align-self: flex-start
+                    text-align: left
+                .column-one
+                    margin: 0
+                    p
+                        height: 30px
+                .column-three
+                    align-self: flex-start
+                    margin: 0
+
+
+
+
+                
+    

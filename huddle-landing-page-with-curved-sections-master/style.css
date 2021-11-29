@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 100vw;
+  margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00252e;
+  border-radius: 100vw;
+  border: 2px solid white;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #005266;
+}
+
+h1, h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #00252e;
+  font-size: 20px;
+  overflow: overlay;
+}
+
+body header {
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5%;
+}
+
+body header button {
+  width: 130px;
+  background-color: transparent;
+  border: 1px solid #ff8fd8;
+  border-radius: 50px;
+  color: #ff8fd8;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+body header button:hover {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+body .container {
+  max-width: 1440px;
+  min-width: 375px;
+  margin-top: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body .container .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 6rem;
+}
+
+body .container .top h1 {
+  font-size: 2.5em;
+  margin: 1rem;
+}
+
+body .container .top p {
+  font-size: 1em;
+  width: 600px;
+  margin: 1rem;
+}
+
+body .container .get-started {
+  margin: 1rem;
+  padding: 1.4rem;
+  width: 400px;
+  background-color: #ff52bf;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+body .container .get-started:hover {
+  background-color: #ff8fd8;
+}
+
+body .container .stats {
+  margin-top: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 150px;
+}
+
+body .container .stats h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+body .container .stats p {
+  color: gray;
+}
+
+body .container .grow-together, body .container .flowing-conversations, body .container .your-users {
+  margin-top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0px 100px 0px 100px;
+  background-color: #f5faff;
+}
+
+body .container .grow-together .text, body .container .flowing-conversations .text, body .container .your-users .text {
+  text-align: left;
+}
+
+body .container .grow-together .text h2, body .container .flowing-conversations .text h2, body .container .your-users .text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+body .container .grow-together .text p, body .container .flowing-conversations .text p, body .container .your-users .text p {
+  font-size: 1rem;
+  width: 520px;
+}
+
+body .container .grow-together img, body .container .flowing-conversations img, body .container .your-users img {
+  width: 50%;
+}
+
+body .container .flowing-conversations {
+  background-color: white;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+body .container .bottom {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+body .container .bottom h2 {
+  font-size: 2.5rem;
+  padding: 20px;
+}
+
+body .bg-image {
+  width: 100%;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  width: 100%;
+  background-color: #00252e;
+  padding: 5% 5% 0% 5%;
+}
+
+body footer .bot-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body footer .bot-container .left {
+  width: 50%;
+  padding-left: 5%;
+}
+
+body footer .bot-container .left .logowhite {
+  margin-bottom: 30px;
+}
+
+body footer .bot-container .left p {
+  width: 350px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+body footer .bot-container .left p img {
+  display: inline;
+  margin-right: 15px;
+}
+
+body footer .bot-container .right {
+  padding-left: 5%;
+  width: 50%;
+}
+
+body footer .bot-container .right h2 {
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+body footer .bot-container .right p {
+  font-size: 1rem;
+  width: 380px;
+  margin-bottom: 35px;
+}
+
+body footer .bot-container .right form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  height: 45px;
+  position: relative;
+}
+
+body footer .bot-container .right form .email {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  padding: 0px 0px 0px 20px;
+  outline: none;
+}
+
+body footer .bot-container .right form .submit {
+  font-size: 14px;
+  width: 120px;
+  margin-left: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff52bf;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+body footer .bot-container .right form .submit:hover {
+  background-color: #ff8fd8;
+}
+
+body footer .bot-container .right form small {
+  display: none;
+}
+
+body footer .bot-container .right .error .email {
+  border: 2px solid #ff4242;
+}
+
+body footer .bot-container .right .error small {
+  display: inline;
+  position: absolute;
+  top: 50px;
+  font-size: 14px;
+  color: #ff4242;
+  margin-left: 20px;
+}
+
+body footer .social {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+body footer .social ul {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+body footer .social ul i {
+  color: white;
+  font-size: 30px;
+}
+
+body footer .social ul i:hover {
+  color: aqua;
+}
+
+body .attribution {
+  font-size: 13px;
+  text-align: center;
+}
+
+body .attribution a {
+  color: #3e52a3;
+}
+
+@media (max-width: 800px) {
+  body .top {
+    margin-top: 10px;
+  }
+  body .top img {
+    width: 5em;
+  }
+  body .top button {
+    width: 90px;
+    height: 25px;
+    font-size: 12px;
+  }
+  body .container {
+    margin-top: 30px;
+  }
+  body .container header {
+    width: 80%;
+  }
+  body .container header h1 {
+    font-size: 1.5rem;
+  }
+  body .container header p {
+    font-size: .9rem;
+    width: 100%;
+  }
+  body .container .screen-mockup {
+    width: 80%;
+  }
+  body .container .get-started {
+    font-size: 1rem;
+    width: 70%;
+    padding: 10px;
+  }
+  body .container .stats {
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 50px;
+  }
+  body .container .stats img {
+    width: 30px;
+  }
+  body .container .stats h2 {
+    font-size: 4rem;
+    text-align: left;
+    line-height: 1;
+  }
+  body .container .stats p {
+    font-size: 1rem;
+  }
+  body .container .stats div {
+    margin-bottom: 80px;
+  }
+  body .container .grow-together, body .container .flowing-conversations, body .container .your-users {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0;
+    background-color: #f5faff;
+    margin-block: 0;
+  }
+  body .container .grow-together .text, body .container .flowing-conversations .text, body .container .your-users .text {
+    width: 80%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  body .container .grow-together .text h2, body .container .flowing-conversations .text h2, body .container .your-users .text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  body .container .grow-together .text p, body .container .flowing-conversations .text p, body .container .your-users .text p {
+    font-size: 1rem;
+    width: auto;
+  }
+  body .container .grow-together img, body .container .flowing-conversations img, body .container .your-users img {
+    width: 70%;
+    margin-top: 50px;
+  }
+  body .container .flowing-conversations {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  body .container .bottom {
+    width: 80%;
+  }
+  body .container .bottom h2 {
+    font-size: 1.5rem;
+  }
+  body footer {
+    width: 100%;
+    padding: 40px;
+  }
+  body footer .bot-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body footer .bot-container .right {
+    margin-block: 60px;
+    padding: 0;
+    width: 100%;
+  }
+  body footer .bot-container .right form {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  body footer .bot-container .right form .email {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+  body footer .bot-container .right form .submit {
+    width: 150px;
+    height: 40px;
+    margin: 0;
+  }
+  body footer .bot-container .left {
+    margin: 0;
+    margin-block: 60px;
+    width: 100%;
+    padding: 0;
+  }
+  body footer .bot-container .left p {
+    width: 100%;
+  }
+  body footer .bot-container .social {
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
