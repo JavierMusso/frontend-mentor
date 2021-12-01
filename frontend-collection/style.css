@@ -26,7 +26,9 @@
 }
 
 html {
+  color: #030042;
   font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -39,7 +41,7 @@ body {
 }
 
 body header {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #030042;
   position: fixed;
   margin-bottom: 3rem;
   width: 100%;
@@ -169,7 +171,12 @@ body main .intro div small a {
   text-decoration: none;
 }
 
-body main .newbie .title {
+body main .newbie, body main .junior {
+  -webkit-padding-before: 4rem;
+          padding-block-start: 4rem;
+}
+
+body main .newbie .title, body main .junior .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,9 +184,10 @@ body main .newbie .title {
       -ms-flex-align: center;
           align-items: center;
   gap: 1.5rem;
+  border-bottom: 1px solid;
 }
 
-body main .newbie .title .circle {
+body main .newbie .title .circle, body main .junior .title .circle {
   background-color: #6C63FF;
   height: 3rem;
   width: 3rem;
@@ -196,9 +204,140 @@ body main .newbie .title .circle {
   text-align: center;
 }
 
-body main .newbie .title .circle p {
+body main .newbie .title .circle p, body main .junior .title .circle p {
   font-size: 2rem;
   font-weight: 700;
   color: white;
+}
+
+body main .newbie .title p, body main .junior .title p {
+  font-size: 0.8rem;
+}
+
+body main .newbie .card-container, body main .junior .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-block: 2rem;
+  row-gap: 2rem;
+}
+
+body main .newbie .card-container article, body main .junior .card-container article {
+  width: 300px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+body main .newbie .card-container article img, body main .junior .card-container article img {
+  margin: auto;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body main .newbie .card-container article a, body main .junior .card-container article a {
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.2rem;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+body main .newbie .card-container article a i, body main .junior .card-container article a i {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+body main .newbie .card-container article a:hover, body main .junior .card-container article a:hover {
+  color: #6C63FF;
+}
+
+body main .newbie .card-container article a:not(:hover), body main .junior .card-container article a:not(:hover) {
+  color: #030042;
+}
+
+body main .newbie .card-container article i, body main .junior .card-container article i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+body main .newbie .card-container article .fa-css3-alt, body main .junior .card-container article .fa-css3-alt {
+  color: blue;
+}
+
+body main .newbie .card-container article .fa-html5, body main .junior .card-container article .fa-html5 {
+  color: orange;
+}
+
+body main .newbie .card-container article .fa-js-square, body main .junior .card-container article .fa-js-square {
+  color: #ffd000;
+}
+
+body main .newbie .card-container article p, body main .junior .card-container article p {
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+body main .newbie .card-container article:hover, body main .junior .card-container article:hover {
+  background-color: #f3f2ff;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+body footer {
+  color: white;
+  text-align: center;
+  background-color: #030042;
+  padding-block: 4rem;
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+body footer p {
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+body footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+body footer .social a {
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+body footer .social a:hover {
+  color: #6C63FF;
+}
+
+body footer .social a:not(:hover) {
+  color: white;
+}
+
+body footer .social i {
+  font-size: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
