@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+    --light-grayish-blue: hsl(240, 5%, 91%);
+    --fontsize: 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+/* 
+html {
+    font-size: var(--fontsize);
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(var(--soft-violet), var(--soft-blue));
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-repeat: no-repeat;
+}
+
+.question-answer__accordion > .answer {
+    display: none;
+}
+
+.active > .answer {
+    display: block;
+    padding-bottom: 1.3rem;
+    color: var(--darkGrayBlue);
+}
+  
+.active img {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in;
+}
+
+.wrapper {
+    background: white;
+    border-radius: 30px;
+    height: 509px;
+    width: 920px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 6rem;
+    background-image: url('/images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: 1260% 65%;
+}
+
+.active > .answer {
+    display: block;
+    padding-bottom: 1.3rem;
+    color: var(--darkGrayBlue);
+  }
+
+.accordion__wrapper {
+    margin-top: 70px;
+    max-width: 350px;
+}
+
+.questions__accordions {
+    height: 100%;
+}
+
+.question-answer__accordion {
+    border-bottom: 1px solid var(--light-grayish-blue);
+}
+
+.title__accordion {
+    font-size: 3rem;
+    margin-top: 0px;
+}
+
+.title__question {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1.4rem 0rem;
+    color: var(--very-dark-grayish-blue);
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.active h3 {
+    font-weight: 700;
+}
+
+.question img {
+    align-self: center;
+}
+
+.image__wrapper {
+    position: relative;
+}
+
+.image__wrapper_inner {
+    background: url('/images/illustration-woman-online-desktop.svg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 120% center;
+}
+
+.box {
+    position: absolute;
+    top: 42%;
+    left: -23%;
+}
+
+.mobile-bg {
+    display: none;
+}
+
+
+@media (max-width: 900px) {
+    .wrapper {
+        background: white;
+        border-radius: 30px;
+        height: 500px;
+        width: 330px;
+        background-image: url('/images/bg-pattern-mobile.svg');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        margin-top: -200px;
+    }
+
+    .image__wrapper_inner {
+        display: none;
+    }
+
+    .box {
+        display: none;
+    }
+
+    .mobile-bg {
+        position: relative;
+        display: block;
+        left: 17px;
+        top: -110px;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Kumbh Sans', sans-serif;
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(var(--soft-violet), var(--soft-blue));
+        background-repeat: no-repeat;
+    }
+
+    .accordion__wrapper {
+        display: block;
+        position: relative;
+        left: -450px;
+        top: 40px;
+        width: 280px;
+    }
+
+    .title__accordion {
+        font-size: 3rem;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+} */
+
+
+.question-answer__accordion > .answer {
+    display: none;
+}
+
+.active > .answer {
+    display: block;
+    padding-bottom: 1.3rem;
+    color: var(--darkGrayBlue);
+}
+  
+.active img {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in;
+}
+
+body {
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(var(--soft-violet), var(--soft-blue));
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    background: white;
+    border-radius: 30px;
+    height: 510px;
+    width: 920px;
+    background-image: url('/images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: -575px -300px;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.box {
+    position: absolute;
+    top: 44%;
+    left: 15.45%;
+}
+
+
