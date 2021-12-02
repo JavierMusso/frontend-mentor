@@ -224,7 +224,7 @@ body main .newbie .card-container, body main .junior .card-container {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin-block: 2rem;
-  row-gap: 2rem;
+  row-gap: 3rem;
 }
 
 body main .newbie .card-container article, body main .junior .card-container article {
@@ -242,6 +242,10 @@ body main .newbie .card-container article img, body main .junior .card-container
   margin-bottom: 1rem;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 body main .newbie .card-container article a, body main .junior .card-container article a {
@@ -250,6 +254,7 @@ body main .newbie .card-container article a, body main .junior .card-container a
   font-size: 1.2rem;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
+  color: #030042;
 }
 
 body main .newbie .card-container article a i, body main .junior .card-container article a i {
@@ -257,12 +262,20 @@ body main .newbie .card-container article a i, body main .junior .card-container
   color: gray;
 }
 
-body main .newbie .card-container article a:hover, body main .junior .card-container article a:hover {
+body main .newbie .card-container article .github i, body main .junior .card-container article .github i {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-left: 110px;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+body main .newbie .card-container article .github i:hover, body main .junior .card-container article .github i:hover {
   color: #6C63FF;
 }
 
-body main .newbie .card-container article a:not(:hover), body main .junior .card-container article a:not(:hover) {
-  color: #030042;
+body main .newbie .card-container article .github i:not(:hover), body main .junior .card-container article .github i:not(:hover) {
+  color: #4d4d4d;
 }
 
 body main .newbie .card-container article i, body main .junior .card-container article i {
@@ -291,6 +304,15 @@ body main .newbie .card-container article:hover, body main .junior .card-contain
   background-color: #f3f2ff;
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+body main .newbie .card-container article:hover img, body main .junior .card-container article:hover img {
+  -webkit-filter: none;
+          filter: none;
+}
+
+body main .newbie .card-container article:hover a, body main .junior .card-container article:hover a {
+  color: #6C63FF;
 }
 
 body footer {
