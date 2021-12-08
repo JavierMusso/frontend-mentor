@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+html {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  background-color: #0d192b;
+  color: #8bacda;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main {
+  background-color: #14253d;
+  border-radius: 12px;
+  width: 350px;
+  padding: 24px;
+}
+
+body main .overlay {
+  width: 302px;
+  height: 302px;
+  opacity: 0;
+  background-color: rgba(0, 255, 247, 0.5);
+  position: absolute;
+  border-radius: 8px;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+body main .overlay:hover {
+  opacity: 1;
+}
+
+body main .nft-img {
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+body main h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+body main h1 span {
+  font-weight: 300;
+}
+
+body main h1:not(:hover) {
+  color: white;
+}
+
+body main h1:hover {
+  color: #00fff7;
+}
+
+body main p {
+  font-weight: 300;
+}
+
+body main .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #2f415b;
+  color: #00fff7;
+  padding-block: 20px;
+  font-size: 0.9rem;
+}
+
+body main .price p {
+  font-weight: 600;
+}
+
+body main .price span {
+  font-weight: 300;
+  color: #8bacda;
+}
+
+body main .autor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-block: 15px 6px;
+  gap: 1rem;
+  font-weight: 300;
+}
+
+body main .autor img {
+  width: 32px;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin: 0;
+}
+
+body main .autor p {
+  font-size: 0.9rem;
+}
+
+body main .autor p a {
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+body main .autor p a:not(:hover) {
+  color: white;
+}
+
+body main .autor p a:hover {
+  color: #00fff7;
+}
+
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+body .attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

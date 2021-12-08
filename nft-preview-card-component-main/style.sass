@@ -1,0 +1,95 @@
+// primary colors
+$soft-blue: hsl(215, 51%, 70%)
+$cyan: hsl(178, 100%, 50%)
+
+// neutral colors
+$very-dark-blue-1: hsl(217, 54%, 11%)
+$very-dark-blue-2: hsl(216, 50%, 16%)
+$very-dark-blue-3: hsl(215, 32%, 27%)
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+html
+    font-family: 'Outfit', sans-serif
+    font-size: 18px
+    
+body
+    background-color: $very-dark-blue-1
+    color: $soft-blue
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    main
+        background-color: $very-dark-blue-2
+        border-radius: 12px
+        width: 350px
+        padding: 24px
+        .overlay
+            width: 302px
+            height: 302px
+            opacity: 0
+            background-color: hsla(178, 100%, 50%, 0.5)
+            position: absolute
+            border-radius: 8px
+            transition: opacity 0.2s ease
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+        .overlay:hover
+            opacity: 1
+        .nft-img
+            border-radius: 8px
+            margin-bottom: 20px
+        h1
+            font-size: 1.3rem
+            font-weight: 600
+            margin-bottom: 12px
+            transition: color 0.3s ease
+            cursor: pointer
+            span
+                font-weight: 300
+        h1:not(:hover)
+            color: white
+        h1:hover
+            color: $cyan
+        p
+            font-weight: 300
+        .price
+            display: flex
+            justify-content: space-between
+            border-bottom: 1px solid $very-dark-blue-3
+            color: $cyan
+            padding-block: 20px
+            font-size: 0.9rem
+            p
+                font-weight: 600
+            span
+                font-weight: 300
+                color: $soft-blue
+        .autor
+            display: flex
+            align-items: center
+            margin-block: 15px 6px 
+            gap: 1rem
+            font-weight: 300
+            img
+                width: 32px
+                border: 1px solid white
+                border-radius: 50px
+                margin: 0
+            p
+                font-size: 0.9rem
+                a
+                    text-decoration: none
+                    transition: color 0.3s ease
+                a:not(:hover)
+                    color: white
+                a:hover
+                    color: $cyan
+    .attribution
+        font-size: 11px
+        text-align: center
+        a
+            color: hsl(228, 45%, 44%)
