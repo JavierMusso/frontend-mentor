@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 ::-webkit-scrollbar {
-  width: 1em;
+  width: 0.5em;
 }
 
 ::-webkit-scrollbar-track {
@@ -10,7 +10,6 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 100vw;
-  border: 2px solid white;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -92,7 +91,7 @@ body header div nav a {
   font-size: 1rem;
   color: black;
   letter-spacing: 1px;
-  width: 100px;
+  width: 5rem;
   text-align: center;
 }
 
@@ -113,7 +112,7 @@ body header div nav a:not(:hover) {
 }
 
 body main {
-  max-width: 1100px;
+  max-width: 1160px;
   margin: auto;
 }
 
@@ -123,6 +122,7 @@ body main .intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-inline: 30px;
 }
 
 body main .intro div {
@@ -361,5 +361,31 @@ body footer .social a:not(:hover) {
 
 body footer .social i {
   font-size: 2rem;
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    background-image: none;
+  }
+  body header div p {
+    font-size: 1rem;
+  }
+  body header div nav {
+    display: none;
+  }
+  body main .newbie .title, body main .junior .title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .newbie .title p, body main .junior .title p {
+    max-width: 250px;
+  }
+  body footer p {
+    margin-inline: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

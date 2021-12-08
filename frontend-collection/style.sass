@@ -4,7 +4,7 @@ $accent-color: #6C63FF
 $font-color: #030042
 
 ::-webkit-scrollbar
-    width: 1em
+    width: 0.5em
 
 ::-webkit-scrollbar-track 
     background: transparent
@@ -12,7 +12,6 @@ $font-color: #030042
 
 ::-webkit-scrollbar-thumb
     border-radius: 100vw
-    border: 2px solid white
 
 ::-webkit-scrollbar-thumb:hover
     -webkit-transition: background 0.2s ease
@@ -30,7 +29,7 @@ html
     scroll-behavior: smooth
 
 body
-    overflow: overlay;
+    overflow: overlay
     font-family: 'Roboto', sans-serif
     background-image: url('./assets/undraw_programming_re_kg9v.svg')
     background-repeat: no-repeat
@@ -68,7 +67,7 @@ body
                     font-size: 1rem
                     color: black
                     letter-spacing: 1px
-                    width: 100px
+                    width: 5rem
                     text-align: center
                 a:hover
                     text-decoration: underline
@@ -82,12 +81,13 @@ body
                     transition: all 0.2s ease
 
     main
-        max-width: 1100px
+        max-width: 1160px
         margin: auto
         .intro
             height: 100vh
             position: relative
             display: flex
+            margin-inline: 30px 
             div
                 margin: 0
                 position: absolute
@@ -220,3 +220,29 @@ body
                 color: white
             i
                 font-size: 2rem
+
+
+@media ( max-width: 700px )
+
+    html
+        font-size: 14px
+    body
+        background-image: none
+        header
+            div
+                p
+                    font-size: 1rem
+                nav
+                    display: none
+        main
+            .newbie, .junior
+                .title
+                    justify-content: center
+                    p
+                        max-width: 250px
+        footer
+            p
+                margin-inline: 1rem 
+
+    
+    
