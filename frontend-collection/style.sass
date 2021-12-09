@@ -60,7 +60,9 @@ body
                         text-decoration: none
                         font-weight: 700
                         color: $accent-color
-            nav
+            .mobile-nav
+                display: none
+            .desktop-nav
                 display: flex
                 gap: 2rem
                 a
@@ -79,6 +81,7 @@ body
                     font-weight: 300
                     text-decoration: none
                     transition: all 0.2s ease
+            
 
     main
         max-width: 1160px
@@ -108,6 +111,8 @@ body
                         text-decoration: none
                         font-weight: 700
                         color: $accent-color
+                    span
+                        font-weight: 700
                 small
                     text-align: right
                     margin-top: 2rem
@@ -230,10 +235,45 @@ body
         background-image: none
         header
             div
+                justify-content: space-evenly
                 p
                     font-size: 1rem
-                nav
+                .desktop-nav
                     display: none
+                .mobile-nav
+                    position: relative
+                    cursor: pointer
+                    font-size: 1.5rem
+                    display: block
+                    .nav-menu
+                        position: absolute
+                        background-color: white
+                        display: none
+                        flex-direction: column
+                        justify-content: left
+                        right: 0px
+                        top: 37px
+                        gap: 10px
+                        height: 55px
+                        border: 1px solid black
+                        cursor: default
+                        a
+                            font-size: 1rem
+                            color: black
+                            letter-spacing: 1px
+                            width: 5rem
+                            text-align: center
+                        a:hover
+                            text-decoration: underline
+                            font-weight: 700
+                            transition: all 0.2s ease
+                            color: $accent-color
+                        a:not(:hover)
+                            text-decoration: underline
+                            font-weight: 300
+                            text-decoration: none
+                            transition: all 0.2s ease
+
         main
             .newbie, .junior
                 .title
